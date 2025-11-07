@@ -2,6 +2,8 @@ package com.test;
 
 import com.microsoft.playwright.Locator;
 
+import org.testng.annotations.Test;
+
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
@@ -9,8 +11,9 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 public class GoogleSearch {
- 
-	public static void main(String[] args) {
+	
+    @Test 
+	public void Launching_Browser () {
 		
 	    // Create a Playwright instance
         try (Playwright playwright = Playwright.create()) {
